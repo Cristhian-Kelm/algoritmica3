@@ -1,1 +1,237 @@
+html{
+    box-sizing: border-box;
+}
 
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+div.hero{
+    background-image: url(../img/encabezado.jpg);
+    height: 100vh;
+    background-position: top center;
+    background-size: cover;
+}
+
+div.contenido-header{
+    padding-top: 40px;
+}
+
+nav.redes-sociales{
+    text-align: center;
+}
+
+nav.redes-sociales a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    margin-right: 20px;
+}
+
+nav.redes-sociales a:last-child{
+    margin-right: 0;
+}
+@media only screen and (min-width: 768px){
+    div.informacion-evento{
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+}
+div.informacion-evento{
+    text-align: center;
+    color: #fff;
+}
+
+div.informacion-evento p{
+    display: inline;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+div.informacion-evento p i{
+    color: #fe4819;
+    font-size: 2em;
+}
+
+p.fecha{
+    float: left;
+}
+p.ciudad{
+    float: right;
+    text-align: right;
+}
+
+h1.nombre-sitio{
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 5.9vw;
+}
+
+p.slogan{
+    text-transform: none!important;
+}
+
+p.slogan span{
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 768px){
+    h1.nombre-sitio{
+        font-size: 9.5vw;
+        margin:0;
+        line-height: 1;
+    }
+}
+
+/*Barra Principal de sitio*/
+div.barra{
+    background-color: #353535;
+    padding: 2rem;
+}
+
+div.logo img{
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px){
+    div.logo{
+        width: 33%;
+    }
+}
+
+/*Menu de Navegacion */
+.navegacion-principal{
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+
+.navegacion-principal a{
+    font-family: Oswald, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2vw;
+    margin-top: 10px;
+    transition: all .3s ease;
+}
+
+.navegacion-principal a:hover{
+    background-color: #f24918;
+}
+
+.navegacion-principal a:last-child{
+    border: 2px solid #f24918;
+    color: #f24918;
+}
+
+.navegacion-principal a:last-child:hover{
+    color: #FFF;
+}
+
+@media only screen and (min-width: 768px){
+   
+    .alineacion{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    nav.navegacion-principal{
+        width: 65%;
+        display: flex;
+    }
+
+    .navegacion-principal a{
+        margin-right: 10px;
+        padding: 10px 10px;
+        width: auto;
+        margin: 0 10px 0 0;
+        line-height: 2.5vw;
+        font-size: 1.8em;
+        max-width: 65%;
+    }
+}
+
+/*MENU PARA CELULAR*/
+
+.menu-movil{
+    display: grid;
+    margin-top: 12px;
+    width: 100%;
+    justify-content: center;
+}
+
+.menu-movil:hover{
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px){
+    .menu-movil{
+        display: none;
+    }
+}
+
+.menu-movil span{
+    height: 1.3vh;
+    margin-bottom: 6px;
+    background-color: #fff;
+    display: block;
+    width: 10vh;
+}
+
+/*TALLERES*/
+.programa {
+    position: relative; /*sirve para identificar la superposicion mediante el padre*/
+}
+
+.contenedor-video{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.contenido-programa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.programa-evento{
+    background-color: rgba(111,215,55,.7);
+    padding: 15px;
+    margin-top:80px;
+}
+
+.programa-evento{
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px){
+    .programa-evento{
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .programa-evento{
+        width: 50%;
+    }
+}

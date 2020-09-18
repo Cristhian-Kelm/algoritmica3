@@ -1,35 +1,140 @@
-<!DOCTYPE html>
+<!DOCTYPE html><html lang="es"><head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPEWEBCONF</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;family=Oswald:wght@400;700&amp;family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
 
-<html lang="es">
-    <head>
-        <title>UPEWEBCONF</title>
-        <meta charset="UTF-8">
-        <link rel="shortcut icon" href="favicon.png" type="image/png">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
-    </head>
-    
-    <body>
-        <header class="site-header">
-            <div class="hero">
-                <div class="contenido-header">
-                    <nav class="redes-sociales">
-                        <a href="#">Facebook</a>
-                        <a href="#">Twitter</a>
-                        <a href="#">Pinterest</a>
-                        <a href="#">Youtube</a>
-                        <a href="#">Instagram</a>
-                    </nav>
-                    
-                    <div class="informacion-evento">
-                        <p class="fecha">15-20 Nov</p>
-                        <p class="ciudad">Ciudad del Este, PY</p>
+<body>
+   
+    <header class="site-header">
+        <div class="hero">
+
+            <div class="contenido-header">
+                <nav class="redes-sociales">
+                    <a href="#"> <i class="fab fa-facebook"></i> </a>
+                    <a href="#"> <i class="fab fa-twitter"></i> </a>
+                    <a href="#"> <i class="fab fa-pinterest"></i> </a>
+                    <a href="#"> <i class="fab fa-youtube"></i></a>
+                    <a href="#"> <i class="fab fa-instagram"></i> </a>
+                </nav>
+                
+                <div class="informacion-evento">
+                    <div class="clearfix">
+                        <p class="fecha"> <i class="far fa-calendar-alt"></i> 15-20 Nov</p>
+                        <p class="ciudad"> <i class="fas fa-map-marked-alt"></i> Ciudad del Este, PY</p>
                     </div>
-                    
-                    <h1></h1>
+                    <h1 class="nombre-sitio">UpeWebConf</h1>
+                    <p class="slogan">La mejor conferencia de <span>diseño web</span></p>
                 </div>
             </div>
-        </header>
-    </body>
+        </div>
+    </header>
     
+    <div class="barra">
+        <div class="contenedor alineacion">
+            <div class="logo">
+                <img src="img/logo.svg" alt="Logo de la UPE">
+            </div>
+            <div class="menu-movil">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navegacion-principal">
+                <a href="#talleres">Conferencia</a>
+                <a href="#">Calendario</a>
+                <a href="#">Invitados</a>
+                <a href="#">Reservaciones</a>
+            </nav>
+        </div>
+    </div>
+
+    <section class="seccion contenedor">
+        <h2>La mejor Conferencia de diseño web en español</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, adipisci itaque? Rerum aut repellat doloremque placeat sed id laudantium. Officia, incidunt facere accusamus qui ratione alias itaque temporibus? Illo, laboriosam.</p>
+    </section>
+
+    <section class="programa">
+        
+        <div class="contenedor-video">
+            <video autoplay="" loop="" muted="" poster="img/bg-talleres.jpg">
+                <source src="video/video.webm" type="video/webm"><!-- video chrome -->
+                <source src="video/video.mp4" type="video/mp4"><!-- video safari -->
+                <source src="video/video.ogv" type="video/ogg"><!-- video firefox -->
+            </video>
+        </div>
+
+        <!-- comentario html -->
+        <div class="contenido-programa">
+            <div class="contenedor">
+                <div class="programa-evento">
+                    <h2>Programa del Evento</h2>
+                    
+                    <nav class="menu-programa">
+                        <a href="#talleres"> <i class="fas fa-code"></i> Talleres </a>
+                        <a href="#seminarios"> <i class="fas fa-university"></i> Seminarios </a>
+                        <a href="#conferencias"> <i class="fas fa-comments"></i> Conferencias </a>
+                    </nav>
+
+                   <div id="talleres" class="info-curso ocultar clearfix">
+                        <div class="detalle-evento">
+                            <h3>HTML5, Css3 y JavaScript</h3>
+                            <p><i class="fas fa-clock"></i>16:00hs</p>
+                            <p><i class="fas fa-calendar">15 Nov</i></p>
+                            <p><i class="fas fa-user">Juan Pueblo</i></p>
+                        </div>
+                        
+                        <div class="detalle-evento">
+                            <h3>Responsive Web Design</h3>
+                            <p><i class="fas fa-clock"></i>20:00hs</p>
+                            <p><i class="fas fa-calendar">15 Nov</i></p>
+                            <p><i class="fas fa-user">Mateo Pinpinella</i></p>
+                        </div>
+                    </div>
+
+                    <div id="seminarios" class="info-curso ocultar clearfix">
+                        <div class="detalle-evento">
+                            <h3>Diseño UX/UI</h3>
+                            <p><i class="fas fa-clock"></i>16:00hs</p>
+                            <p><i class="fas fa-calendar">15 Nov</i></p>
+                            <p><i class="fas fa-user">Juan Pueblo</i></p>
+                        </div>
+                        
+                        <div class="detalle-evento">
+                            <h3>Aprende a Programar en una Mañana</h3>
+                            <p><i class="fas fa-clock"></i>20:00hs</p>
+                            <p><i class="fas fa-calendar">15 Nov</i></p>
+                            <p><i class="fas fa-user">Mateo Pinpinella</i></p>
+                        </div>
+                    </div>
+
+                    <div id="conferencias" class="info-curso ocultar clearfix">
+                        <div class="detalle-evento">
+                            <h3>Como Ser un Freelancer</h3>
+                            <p><i class="fas fa-clock"></i>16:00hs</p>
+                            <p><i class="fas fa-calendar">15 Nov</i></p>
+                            <p><i class="fas fa-user">Juan Pueblo</i></p>
+                        </div>
+                        <div class="detalle-evento">
+                            <h3>Tecnologías del Futuro</h3>
+                            <p><i class="fas fa-clock"></i>20:00hs</p>
+                            <p><i class="fas fa-calendar">15 Nov</i></p>
+                            <p><i class="fas fa-user">Mateo Pinpinella</i></p>
+                        </div>
+                        <a href="#" class="button float-right">Ver Todos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+
+</body>
 </html>
