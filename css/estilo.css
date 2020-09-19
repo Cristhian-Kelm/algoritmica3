@@ -196,6 +196,56 @@ div.logo img{
     width: 10vh;
 }
 
+/*TITULO EN H2*/
+.contenedor{
+    width: 98%;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 480px){
+    .contenedor{
+        width: 98%;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .contenedor{
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .contenedor{
+        width: 92%;
+    }
+}
+
+.seccion{
+    padding: 30px 0px;
+}
+
+.seccion p{
+    font-size: 1.2em;
+    text-align: center;
+}
+
+h2 {
+    font-family: Oswald, sans-serif;
+    font-size: 2.4em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+h2::after{
+    content:'';
+    margin: 0 auto;
+    background-image: url(../img/separador.png);
+    height: 30px;
+    width: 100px;
+    display: block;
+}
+
 /*TALLERES*/
 .programa {
     position: relative; /*sirve para identificar la superposicion mediante el padre*/
@@ -215,7 +265,7 @@ div.logo img{
 }
 
 .programa-evento{
-    background-color: rgba(111,215,55,.7);
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 15px;
     margin-top:80px;
 }
@@ -234,4 +284,111 @@ div.logo img{
     .programa-evento{
         width: 50%;
     }
+}
+
+.menu-programa{
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px){
+    .menu-programa {
+        display: table;
+    }
+}
+
+.menu-programa a{
+    display:block;
+    text-align: center;
+    font-size: 1.4em;
+    color: #000;
+    text-decoration: none;
+    font-family: Oswald, sans-serif;
+    margin-bottom: 10px;
+    position: relative;
+    border-bottom: 3px solid #f24918;
+}
+
+.menu-programa a.activo::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20px;
+    width: 30px;
+    background-image: url(../img/talleres-flecha.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    bottom: -20px;
+}
+
+@media only screen and (min-width: 768px){
+    .menu-programa a{
+        display: table-cell;
+    }
+}
+
+
+.menu-programa a i,
+.detalle-evento p i{
+    color: #f24918;
+    font-size: 1.4em;
+    margin-right: 5px;
+}
+
+div.ocultar{
+    display: none;
+}
+
+/*detalle del evento*/
+
+.detalle-evento{
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+    padding: 0px 20px;
+}
+
+.detalle-evento:nth-child(2){
+    border: none;
+}
+
+.detalle-evento p{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+h3{
+    font-size: 1.8em;
+    font-family: PT Sans, sans-serif;
+
+}
+
+.button{
+    background-color: #f24919;
+    font-family: Oswald, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 15px;
+    float: right;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    transition: all .4s ease;
+}
+
+.button:hover{
+    background-color: brown;
+    background-color: #fff;
+    color: #fe4819;
+    border: 1px solid #fe4819;
+}
+
+
+.caja{
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    border-radius: 25% 5% 25% 5%;
 }
